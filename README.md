@@ -2,7 +2,7 @@
 
 Test project with Page Object Model design pattern using Selenium + Python + PyTest + Allure Report + MySQL
 
-The application under test (AUT) is [Salesforce Sales Cloud](https://www.salesforce.com/ca/products/sales-cloud/overview/), offered as a free trial for 30 days. Salesforce Sales Cloud is a customer relationship management (CRM) that empowers businesses to manage leads, track progress, and automate sales processes with ease.
+The application under test (AUT) is [Salesforce Sales Cloud](https://www.salesforce.com/ca/products/sales-cloud/overview/), offered as a free trial for 30 days. It is a customer relationship management (CRM) that empowers businesses to manage leads, track progress, and automate sales processes with ease.
 
 ## Contents
 
