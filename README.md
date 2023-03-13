@@ -39,15 +39,15 @@ The application under test (AUT) is [Salesforce Sales Cloud](https://www.salesfo
 
 - Hooks:
   - `pytest_addoption` for adding command line options
-  - `@pytest.fixture(scope='session')` for reading the `config.ini` only once per suite
+  - `@pytest.fixture(scope='session')` for reading the `config/config.ini` only once per session
   - `@pytest.fixture(scope='function', autouse=True)` function in `tests/conftest.py` for initializing the driver
-  - `yield` keyword for delaying the execution to close the driver until the test completes
+  - `yield` keyword to close the driver after the test completes
 - Test classes:
   - `@pytest.mark.parametrize` for data driven approach
   - Reporting:
     - `@allure.tag` to categorize test cases
     - `@allure.description` objective of the test case
-    - `@allure.severity` how soon the test case has to be tested
+    - `@allure.severity` define how soon the feature has to be tested
   - Fluent Design Pattern
 - Parallel execution with xdist
 
@@ -55,8 +55,8 @@ The application under test (AUT) is [Salesforce Sales Cloud](https://www.salesfo
 
 Since Salesforce implemented **Lightning**, which is a modern and more complex UI platform compared to their **Classic** interface, automated tests have been difficult to write especially because it uses a lot of JavaScript. In this project, I faced the following issues:
 - Long and complex XPath for locating dynamic elements
-- Different promotion banners appearing right after logging in
-- Had to use `time.sleep()` in some cases
+- Different promotion frames appearing right after logging in
+- Use of `time.sleep()` in some cases
 - Selenium click didn't work
 
 ## Installation
@@ -94,9 +94,9 @@ $ python teardown_db.py
 ```
 
 where:<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;{browser} can either be `chrome`, `edge` or `firefox`,<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;{headless} `yes` or `no` and<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;{environment} `local` or `remote`.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{browser} can either be `chrome`, `edge` or `firefox`,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{headless} `yes` or `no` and<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{environment} `local` or `remote`.<br/>
 
 ## Contact
 
