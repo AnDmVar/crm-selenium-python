@@ -79,6 +79,7 @@ Type the following command in a terminal:
 
 ```bash
 $ git clone https://github.com/mk-sdet/crm-selenium-python.git
+$ cd crm-selenium-python.git
 $ pip install -r requirements.txt
 ```
 
