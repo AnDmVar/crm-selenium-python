@@ -41,7 +41,7 @@ The application under test (AUT) is [Salesforce Sales Cloud](https://www.salesfo
   - `pytest_addoption` for adding command line options
   - `@pytest.fixture(scope='session')` for reading the `config/config.ini` only once per session
   - `@pytest.fixture(scope='function', autouse=True)` function in `tests/conftest.py` for initializing the driver
-  - `yield` keyword to close the driver after the test completes
+  - `yield` keyword to open and close the driver before and after each test
 - Test classes:
   - `@pytest.mark.parametrize` for data driven approach
   - Reporting:
