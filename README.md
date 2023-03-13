@@ -20,7 +20,7 @@ The application under test (AUT) is [Salesforce Sales Cloud](https://www.salesfo
 ## Tools
 
 - PyCharm (integrated development environment)
-- PIP (dependency management)
+- pip (package installer)
 - Selenium WebDriver (web automation framework)
 - Selenium Grid (remote testing)
 - PyTest (testing framework)
@@ -64,7 +64,7 @@ Since Salesforce implemented **Lightning**, which is a modern and more complex U
 ### Prerequisites:
 
 - Python 3
-- PIP
+- pip
 - Chrome, Edge and Firefox browsers
 - MySQL database connected to localhost
 - Selenium Grid with hub running and nodes registered
