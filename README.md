@@ -79,9 +79,8 @@ Type the following command in a terminal:
 
 ```bash
 $ git clone https://github.com/mk-sdet/crm-selenium-python.git
+$ pip install -r requirements.txt
 ```
-
-or simply download the repo and unzip it.
 
 ### How to run:
 
